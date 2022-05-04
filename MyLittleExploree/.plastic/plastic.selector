@@ -1,0 +1,4 @@
+repository "MyLittleExploree@LePogs@cloud"
+  path "/"
+    br "/main"
+    co "/main"
