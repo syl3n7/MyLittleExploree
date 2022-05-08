@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class DoorSetActive : MonoBehaviour
 {
+    public GameObject Stone;
+    private bool animStone;
     
     public void OpenDoor()
     {
-        gameObject.SetActive(false);
+        animStone = true;
+        Stone.GetComponent<Animator>().SetBool("Stopped", animStone);
     }
 
     public void CloseDoor()
     {
-        gameObject.SetActive(true);
+        animStone = false;
+        Stone.GetComponent<Animator>().SetBool("Stopped", animStone);
     }
 }

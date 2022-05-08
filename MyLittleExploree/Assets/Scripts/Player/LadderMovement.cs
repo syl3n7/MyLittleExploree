@@ -19,8 +19,8 @@ public class LadderMovement : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
-    {
+    private void FixedUpdate() //tem um bug que faz com que o player 1 ou 2 seja afetado
+    {                           //faz com que o jogador contrario ao que ta a subir a escada salte
         if (isClimbing)
         {
             rb.gravityScale = 0f;

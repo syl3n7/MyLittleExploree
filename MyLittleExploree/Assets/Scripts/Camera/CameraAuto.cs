@@ -8,11 +8,11 @@ public class CameraAuto : MonoBehaviour
     public List<Transform> targets;
 
     public Vector3 offset;
-    public float smoothTime = .5f;
+    public float smoothTime = .7f;
     
-    public float minZoom = 40f;
-    public float maxZoom = 10f;
-    public float zoomLimiter = 50f;
+    public float minZoom = 3f;
+    public float maxZoom = 9f;
+    public float zoomLimiter = 5f;
 
     private Vector3 velocity;
     private Camera cam;
@@ -31,7 +31,7 @@ public class CameraAuto : MonoBehaviour
     void Zoom()
     {
         float newZoom = Mathf.Lerp(maxZoom, minZoom, GetGreatestDistance() / zoomLimiter);
-        cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, newZoom, Time.deltaTime);
+        cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, newZoom, Time.deltaTime);
     }
     void Move()
     {
