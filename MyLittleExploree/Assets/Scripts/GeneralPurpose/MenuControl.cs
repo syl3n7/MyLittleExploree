@@ -18,6 +18,9 @@ public class MenuControl : MonoBehaviour
     }
     void Update()
     {
+        //implementation of "R" Reload current scene - common feature of platformer games.
+        if (sCene.name != "MainMenu" && sCene.name != "Credits") if (Input.GetKey(KeyCode.R)) SceneManager.LoadScene(sCene.name);
+        //end of implementation of "R".
         if (sCene.name != "1Player" || sCene.name != "2Players") Cursor.visible = true;
         else Cursor.visible = false;
         if (sCene.name != "MainMenu" && sCene.name != "Credits") pauseMenu();
