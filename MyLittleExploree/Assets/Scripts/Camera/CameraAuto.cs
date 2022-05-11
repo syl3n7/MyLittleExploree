@@ -10,9 +10,9 @@ public class CameraAuto : MonoBehaviour
     public Vector3 offset;
     public float smoothTime = .7f;
     
-    public float minZoom = 3f;
+    public float minZoom = 2.5f;
     public float maxZoom = 9f;
-    public float zoomLimiter = 5f;
+    public float zoomLimiter = 7f;
 
     private Vector3 velocity;
     private Camera cam;
