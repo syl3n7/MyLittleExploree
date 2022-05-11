@@ -1,3 +1,2 @@
 # MyLittleExploree
-Simple project for AVI class (Ambientes Graficos Interativos)
-This became an ongoig project.
+What once was a simple project for a class at uni, became our passion, we are proud to present to you our little project.
