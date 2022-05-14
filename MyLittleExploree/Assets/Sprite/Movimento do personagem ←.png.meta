@@ -39,6 +39,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -232,6 +233,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "Movimento do personagem \u2190_3": 2055200841290506620
+      "Movimento do personagem \u2190_2": 366163059988987842
+      "Movimento do personagem \u2190_4": 6498208206422711736
+      "Movimento do personagem \u2190_1": 3055898753166779819
+      "Movimento do personagem \u2190_0": 2731256763967923252
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

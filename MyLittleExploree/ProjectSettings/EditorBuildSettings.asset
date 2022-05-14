@@ -12,12 +12,27 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: b4591ac4abd11c34280c1a05bff14d71
   - enabled: 1
+    path: Assets/Scenes/Instructions.unity
+    guid: 4db6cc0e21c573640b3908cf5142ea81
+  - enabled: 1
+    path: Assets/Scenes/Options.unity
+    guid: 425c4974dc96f8f4081028fa8d8ed302
+  - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 8c0ffc9468fa27a409dae7c4c70ebdcf
+  - enabled: 1
+    path: Assets/Scenes/PlayerChoice.unity
+    guid: 20b9cb00f771afa4d8b30c202c68cb8c
   - enabled: 1
     path: Assets/Scenes/1Player.unity
     guid: 07c80e37f7c838f4f9feb13359f5308e
   - enabled: 1
     path: Assets/Scenes/2Players.unity
     guid: d02c39fd961b4834f9d0aa2173f5d799
+  - enabled: 1
+    path: Assets/Scenes/PlayerCustomizer.unity
+    guid: bc263b48dd739654cb1e70517ced2834
+  - enabled: 1
+    path: Assets/Scenes/HighScore.unity
+    guid: 4c57aa7212b26404c971a3f36e556d46
   m_configObjects: {}
