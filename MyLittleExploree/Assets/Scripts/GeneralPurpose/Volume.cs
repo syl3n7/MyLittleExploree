@@ -5,13 +5,18 @@ using UnityEngine.UI;
 
 public class Volume : MonoBehaviour
 {
-    private Slider sliderVolume = null;
-
-    private Text volumeTextUI = null;
-
-    public void VolumeSlider (float volume)
-    {
-
+    public GameObject toggle;
+    public void AudioControl(bool muted)
+    { //controlar audio
+        if (muted)
+        {
+            AudioListener.volume = 0f;
+            Debug.Log("Muted");
+        }
+        else
+        {
+            AudioListener.volume = 0.4f;
+            Debug.Log("UnMuted");
+        }
     }
-
 }

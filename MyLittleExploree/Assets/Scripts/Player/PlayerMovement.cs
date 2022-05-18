@@ -17,6 +17,18 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (transform.position.x > 223f)
+        {
+            MovementSpeed = 6f;
+            rb.drag = 0f;
+            JumpForce = 100f;
+        }
+        else
+        {
+            MovementSpeed = 5f;
+            JumpForce = 110f;
+            rb.drag = 1f;
+        }
         var movement = Input.GetAxis("Horizontal1");
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
 

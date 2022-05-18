@@ -4,14 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
-public class Timer : MonoBehaviour
+public class Timer2 : MonoBehaviour
 {
     public Text timer;
 
     private int counteR;
     public Text RetriesText;
     public Transform p;
+    public Transform p2;
     private Vector3 reset;
 
     private float elapsedTime;
@@ -20,20 +20,20 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
-        
         reset = p.transform.position;
         sCene = SceneManager.GetActiveScene();
         timer.text = "00:00:00";
     }
     void Update()
     {
-        //implementation of "R" Reload current scene - common feature of platformer games.
+        //implementation of "R" reposition players on current scene - common feature of platformer games.
         if (sCene.name != "Credits" && sCene.name != "HighScore" && sCene.name != "Instructions" && sCene.name != "MainMenu" && sCene.name != "Options" && sCene.name != "PlayerChoice" && sCene.name != "PlayerCustomizer")
         {
             if (Input.GetKeyUp(KeyCode.R))
             {
                 RetriesText.text = "Retries: " + ++counteR;
                 p.transform.position = reset;
+                p2.transform.position = reset;
             }
             if (Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyUp(KeyCode.R)) // I've decided to leave left alt as continuous and R as only Up to prevent shit from hitting the fan.
             {
@@ -55,5 +55,4 @@ public class Timer : MonoBehaviour
         string timePlayingStr = "Wasted Time: " + timePlaying.ToString("mm':'ss'.'ff");
         timer.text = timePlayingStr;
     }
-
 }

@@ -73,6 +73,18 @@
       "source": "builtin",
       "dependencies": {}
     },
+    "com.unity.2d.tilemap.extras": {
+      "version": "2.2.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.tilemap": "1.0.0",
+        "com.unity.2d.tilemap": "1.0.0",
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.burst": {
       "version": "1.6.5",
       "depth": 2,
@@ -96,15 +108,6 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.ide.rider": {
-      "version": "3.0.13",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.ext.nunit": "1.0.6"
-      },
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
@@ -132,9 +135,31 @@
     },
     "com.unity.nuget.newtonsoft-json": {
       "version": "3.0.2",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.remote-config": {
+      "version": "2.1.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "2.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.remote-config-runtime": "2.1.2"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.remote-config-runtime": {
+      "version": "2.1.2",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "2.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.modules.unityanalytics": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.services.core": {
@@ -188,6 +213,16 @@
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0"
       }
+    },
+    "com.unity.visualscripting": {
+      "version": "1.7.8",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
