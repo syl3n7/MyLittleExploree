@@ -28,6 +28,7 @@ public class MenuControl : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Escape)) panel.SetActive(!panel.activeSelf);
 
         if (panel.activeSelf) {
+            //inserir pause no som
             Cursor.visible = true;
             Time.timeScale = 0f;
         }
