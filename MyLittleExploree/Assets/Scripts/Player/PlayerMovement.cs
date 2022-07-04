@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public float MovementSpeed = 5f;
     public float JumpForce = 10f;
     private Rigidbody2D rb;
+    public VirtualJoystick joystick;
 
     [SerializeField] public Animator animator;
     private bool animLeft;
