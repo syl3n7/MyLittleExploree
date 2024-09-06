@@ -1,4 +1,0 @@
-repository "MyLittleExploree@LePogs@cloud"
-  path "/"
-    smartbranch "/main" 
-     
